@@ -18,8 +18,10 @@ body {
 }
 
 @media (max-width:768px) {
-.head-inf { 
-  text-align: center;
+
+  .head-inf { 
+    text-align: center;
+
 }
 }
 .main-inf {
