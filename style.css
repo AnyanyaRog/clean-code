@@ -4,13 +4,13 @@ body {
   color: #333;
   font-family: Lato, sans-serif;
 }
-.head-inf {
+header {
   width: 500px;
   margin: 0 auto;
   display: block;
   text-align: right;
 }
-.head-inf 
+header
 img {
   width: 100%;
 }
@@ -20,12 +20,12 @@ img {
 
 @media (max-width:768px) {
 
-  .head-inf { 
+  header { 
     text-align: center;
 
 }
 }
-.main-inf {
+article {
   display: block;
   width: 500px;
   margin: 0 auto 0;
