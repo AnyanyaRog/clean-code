@@ -1,52 +1,52 @@
 /* Basic Style */
-body {
+.body {
   background-color: #f8f8f8;
   color: #333;
   font-family: Lato, sans-serif;
 }
-header {
+.header  {
   width: 500px;
   margin: 0 auto;
   display: block;
   text-align: right;
-}
-header
-img {
+} 
+.header__image {
   width: 100%;
 }
-.more-inf {
+.header__more-inf {
   font-family: fantasy, cursive;
 }
 
 @media (max-width:768px) {
 
-  header { 
-    text-align: center;
+.header { 
+  text-align: center;
+}
 
 }
-}
-article {
+.main__article {
   display: block;
   width: 500px;
   margin: 0 auto 0;
 }
-.task {
+.main__task {
   width: 56%;
   display: inline-block;
   flex-grow: 1;
 }
-.task-wrapper {
+.main__task-wrapper {
   display: flex;
 }
-ul {
+.main__list {
   margin: 0;
   padding: 0px;
 }
+li,
 h3 {
   list-style: none;
 }
 input,
-button {
+button{
   outline: none;
 }
 button {
@@ -62,7 +62,8 @@ button:hover {
   color: #3a3a3a;
 }
 /* Heading */
-label[for="new-task"] {
+h3,
+label[for='new-task'] {
   color: #333;
   font-weight: 700;
   font-size: 15px;
@@ -88,7 +89,7 @@ input[type="text"]:focus {
 }
 
 /* New Task */
-label[for="new-task"] {
+label[for='new-task'] {
   display: block;
   margin: 0 0 20px;
 }
@@ -121,44 +122,31 @@ li > label {
 li > input[type="text"] {
   width: 226px;
 }
-button
-.delete 
-img {
+button.main__delete-button img {
   height: 2em;
   transform: rotateZ(45deg);
   transition: transform 200ms ease-in;
 }
-button
-.delete 
-img:hover {
+button.main__delete-button img:hover {
   transform: rotateZ(0);
 }
 
 /* Completed */
-#completed-tasks 
-label {
+#completed-tasks label {
   text-decoration: line-through;
   color: #888;
 }
 
 /* Edit Task */
-ul 
-li 
-input[type=text] {
-  display: none;
+.main__list li input[type=text] {
+  display:none
 }
 
-ul 
-li
-.editMode
-input[type=text] {
-  display: inline-block;
-  width: 224px;
+.main__list li.main__editMode input[type=text] {
+  display:inline-block;
+  width:224px
 }
 
-ul 
-li
-.editMode
-label {
-  display: none;
+.main__list li.main__editMode label {
+  display:none;
 }
